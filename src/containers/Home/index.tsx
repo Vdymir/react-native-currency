@@ -1,9 +1,9 @@
 import React from 'react';
 import {View} from 'react-native';
-import Text from '../../commons/Text';
-import CustomStatusBar from '../../commons/CustomStatusBar';
+import Text from '../../core/presentation/components/Text';
+import CustomStatusBar from '../../core/presentation/components/CustomStatusBar';
 import colors from '../../themes/colors';
-import {styles} from './styles';
+import {styles} from '../../core/presentation/containers/Home/styles';
 
 export default function Home(): JSX.Element {
   return (

@@ -7,10 +7,10 @@ interface StatusBarProps {
   barStyle?: StatusBarStyle;
 }
 
-const CustomStatusBar: React.FC<StatusBarProps> = ({
+export default function CustomStatusBar({
   backgroundColor,
   barStyle,
-}): JSX.Element => {
+}: StatusBarProps): JSX.Element {
   return (
     <View style={[styles.statusBar, {backgroundColor}]}>
       <StatusBar
@@ -20,5 +20,4 @@ const CustomStatusBar: React.FC<StatusBarProps> = ({
       />
     </View>
   );
-};
-export default CustomStatusBar;
+}

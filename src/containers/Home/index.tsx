@@ -1,11 +1,18 @@
 import React from 'react';
 import {View} from 'react-native';
 import Text from '../../commons/Text';
+import CustomStatusBar from '../../commons/CustomStatusBar';
+import colors from '../../themes/colors';
+import {styles} from './styles';
 
 export default function Home(): JSX.Element {
   return (
-    <View>
-      <Text>Hola 1</Text>
+    <View style={styles.container}>
+      <CustomStatusBar
+        barStyle="light-content"
+        backgroundColor={colors.primary}
+      />
+      <Text customStyles={styles.text}>Hola 1</Text>
     </View>
   );
 }

@@ -5,6 +5,7 @@ import {styles} from './styles';
 import CustomStatusBar from '../../components/CustomStatusBar';
 import colors from '../../../../themes/colors';
 import Text from '../../components/Text';
+import ListCurrency from '../../components/Home/ListCurrency';
 
 export default function Home(): JSX.Element {
   const [currencies, setCurrencies] = useState([]);
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
         backgroundColor={colors.primary}
       />
       <Text customStyles={styles.text}>Hola</Text>
+      <ListCurrency currencies={currencies} />
     </View>
   );
 }

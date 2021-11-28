@@ -5,7 +5,6 @@ interface Styles {
 }
 export const styles = StyleSheet.create<Styles>({
   container: {
-    backgroundColor: colors.white,
     flex: 1,
   },
 });

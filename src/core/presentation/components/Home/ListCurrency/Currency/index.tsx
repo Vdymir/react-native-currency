@@ -10,7 +10,14 @@ interface ListCurrencyProps {
 export default function Currency({currency}: ListCurrencyProps): JSX.Element {
   return (
     <View style={styles.container}>
-      <Text customStyles={styles.text}>{currency.id}</Text>
+      <View>
+        <Text customStyles={styles.text}>{currency.name}</Text>
+        <Text customStyles={styles.text}>{currency.symbol}</Text>
+      </View>
+      <View style={styles.containerPrices}>
+        <Text customStyles={styles.text}>$ {currency.price_usd}</Text>
+        <Text customStyles={styles.text}>{currency.price_btc}</Text>
+      </View>
     </View>
   );
 }

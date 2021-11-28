@@ -24,8 +24,10 @@ export default function Home(): JSX.Element {
         barStyle="light-content"
         backgroundColor={colors.primary}
       />
-      <Text customStyles={styles.text}>Hola</Text>
-      <ListCurrency currencies={currencies} />
+      <View style={styles.main}>
+        <Text customStyles={styles.text}>Currency Data</Text>
+        <ListCurrency currencies={currencies} />
+      </View>
     </View>
   );
 }

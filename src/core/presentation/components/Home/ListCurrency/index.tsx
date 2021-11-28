@@ -19,7 +19,7 @@ export default function ListCurrency({
     <View style={styles.container}>
       <FlatList
         data={currencies}
-        renderItem={item => renderItem(item)}
+        renderItem={renderItem}
         keyExtractor={item => item.id}
       />
     </View>

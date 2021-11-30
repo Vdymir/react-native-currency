@@ -11,7 +11,7 @@ import {ResponseCurrency} from '../../../data/Currency/Currency';
 export default function Home(): JSX.Element {
   const [currencies, setCurrencies] = useState<ResponseCurrency[]>([]);
 
-  async function getSampleCurrencyDataHandler() {
+  async function getSampleCurrencyDataHandler(): Promise<void> {
     const resCurrencies = await getSampleCurrencyData();
     setCurrencies(resCurrencies.list);
   }

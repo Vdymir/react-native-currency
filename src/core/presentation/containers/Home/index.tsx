@@ -7,6 +7,7 @@ import colors from '../../../../themes/colors';
 import Text from '../../components/Text';
 import ListCurrency from '../../components/Home/ListCurrency';
 import {ResponseCurrency} from '../../../data/Currency/Currency';
+import SearchBox from "../../components/shared/SearchBox";
 
 export default function Home(): JSX.Element {
   const [currencies, setCurrencies] = useState<ResponseCurrency[]>([]);
@@ -27,6 +28,9 @@ export default function Home(): JSX.Element {
       />
       <View style={styles.main}>
         <Text customStyles={styles.text}>Currency Data</Text>
+        <View style={styles.containerSearchBox}>
+          <SearchBox />
+        </View>
         <ListCurrency currencies={currencies} />
       </View>
     </View>

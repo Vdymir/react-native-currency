@@ -4,6 +4,7 @@ interface Styles {
   container: ViewStyle;
   text: TextStyle;
   main: ViewStyle;
+  containerSearchBox: ViewStyle;
 }
 export const styles = StyleSheet.create<Styles>({
   container: {
@@ -18,5 +19,8 @@ export const styles = StyleSheet.create<Styles>({
     color: colors.white,
     fontSize: 22,
     textAlign: 'center',
+  },
+  containerSearchBox: {
+    marginVertical: 14,
   },
 });

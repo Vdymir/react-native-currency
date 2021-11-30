@@ -11,14 +11,21 @@ import SearchBox from '../../components/shared/SearchBox';
 
 export default function Home(): JSX.Element {
   const [currencies, setCurrencies] = useState<ResponseCurrency[]>([]);
+  const [copyCurrencies, setCopyCurrencies] = useState<ResponseCurrency[]>([]);
   const [query, setQuery] = useState<string>('');
 
   async function getSampleCurrencyDataHandler(): Promise<void> {
     const resCurrencies = await getSampleCurrencyData();
     setCurrencies(resCurrencies.list);
+    setCopyCurrencies(resCurrencies.list);
   }
   function handlerSearchCurrency(value: string) {
+    const expresion = new RegExp(`${value.toUpperCase()}.*`, 'i');
+    const currenciesFound = copyCurrencies.filter(currency =>
+      expresion.test(currency.name),
+    );
     setQuery(value);
+    setCurrencies(currenciesFound);
   }
   useEffect(() => {
     getSampleCurrencyDataHandler().then();

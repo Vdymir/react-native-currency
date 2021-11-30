@@ -14,12 +14,12 @@ export default function Home(): JSX.Element {
   const [copyCurrencies, setCopyCurrencies] = useState<ResponseCurrency[]>([]);
   const [query, setQuery] = useState<string>('');
 
-  async function getSampleCurrencyDataHandler(): Promise<void> {
+  async function getSampleCurrencyDataHandler() {
     const resCurrencies = await getSampleCurrencyData();
     setCurrencies(resCurrencies.list);
     setCopyCurrencies(resCurrencies.list);
   }
-  function handlerSearchCurrency(value: string): void {
+  function handlerSearchCurrency(value: string) {
     const expresion = new RegExp(`${value.toUpperCase()}.*`, 'i');
     const currenciesFound = copyCurrencies.filter(currency =>
       expresion.test(currency.name),

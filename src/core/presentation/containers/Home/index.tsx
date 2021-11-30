@@ -7,14 +7,18 @@ import colors from '../../../../themes/colors';
 import Text from '../../components/Text';
 import ListCurrency from '../../components/Home/ListCurrency';
 import {ResponseCurrency} from '../../../data/Currency/Currency';
-import SearchBox from "../../components/shared/SearchBox";
+import SearchBox from '../../components/shared/SearchBox';
 
 export default function Home(): JSX.Element {
   const [currencies, setCurrencies] = useState<ResponseCurrency[]>([]);
+  const [query, setQuery] = useState<string>('');
 
   async function getSampleCurrencyDataHandler(): Promise<void> {
     const resCurrencies = await getSampleCurrencyData();
     setCurrencies(resCurrencies.list);
+  }
+  function handlerSearchCurrency(value: string) {
+    setQuery(value);
   }
   useEffect(() => {
     getSampleCurrencyDataHandler().then();
@@ -29,7 +33,7 @@ export default function Home(): JSX.Element {
       <View style={styles.main}>
         <Text customStyles={styles.text}>Currency Data</Text>
         <View style={styles.containerSearchBox}>
-          <SearchBox />
+          <SearchBox handler={handlerSearchCurrency} value={query} />
         </View>
         <ListCurrency currencies={currencies} />
       </View>

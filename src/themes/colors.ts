@@ -3,4 +3,5 @@ export default {
   black: '#000',
   white: '#FFF',
   secondary: '#201f27',
+  primaryLight: '#25262a',
 };

@@ -1,11 +1,28 @@
 import React from 'react';
-import {View} from 'react-native';
-import Text from '../../Text';
+import {View, TextInput} from 'react-native';
+import Icon from 'react-native-vector-icons/AntDesign';
+import {styles} from './styles';
+import colors from '../../../../../themes/colors';
 
-export default function SearchBox(): JSX.Element {
+interface SearchBoxProps {
+  handler: (arg0: string) => void;
+  value: string;
+}
+
+export default function SearchBox({
+  handler,
+  value,
+}: SearchBoxProps): JSX.Element {
   return (
-    <View>
-      <Text>Hola</Text>
+    <View style={styles.container}>
+      <Icon name="search1" size={25} color={colors.white} />
+      <TextInput
+        value={value}
+        onChangeText={handler}
+        placeholderTextColor={colors.white}
+        placeholder="Search ..."
+        style={styles.input}
+      />
     </View>
   );
 }

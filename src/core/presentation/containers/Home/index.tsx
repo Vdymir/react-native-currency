@@ -19,7 +19,7 @@ export default function Home(): JSX.Element {
     setCurrencies(resCurrencies.list);
     setCopyCurrencies(resCurrencies.list);
   }
-  function handlerSearchCurrency(value: string) {
+  function handlerSearchCurrency(value: string): void {
     const expresion = new RegExp(`${value.toUpperCase()}.*`, 'i');
     const currenciesFound = copyCurrencies.filter(currency =>
       expresion.test(currency.name),

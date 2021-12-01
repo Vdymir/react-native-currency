@@ -21,8 +21,8 @@ const useAsync = <T extends any>(asyncFunction: any, immediate = true) => {
         setValue(response);
         setStatus(STATUS.SUCCESS);
       })
-      .catch((error: Error) => {
-        setError(error);
+      .catch((err: Error) => {
+        setError(err);
         setStatus(STATUS.ERROR);
         setTimeout(() => {
           setStatus(STATUS.IDLE);

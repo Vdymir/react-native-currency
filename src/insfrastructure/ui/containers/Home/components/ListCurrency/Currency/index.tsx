@@ -1,9 +1,9 @@
 import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
-import {styles} from './styles';
+import {_styles} from './styles';
 import Text from '../../../../../components/Text';
 import {StackScreenProps} from '@react-navigation/stack';
-import {generateUrlImage} from '../../../../../../helpers';
+import {generateUrlImage, selectFormatPercent } from "../../../../../../helpers";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -19,6 +19,7 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
   function handlePressCurrency() {
     //navigation.push('currencyDetail');
   }
+  const styles = _styles(selectFormatPercent(currency.percent_change_24h));
   return (
     <TouchableOpacity onPress={handlePressCurrency} style={styles.container}>
       <View style={styles.infoCurrency}>
@@ -29,12 +30,12 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
         />
         <View style={styles.containerNameCurrency}>
           <Text customStyles={styles.text}>{currency.name}</Text>
-          <Text customStyles={styles.text}>{currency.symbol}</Text>
+          <Text customStyles={styles.text}>{currency.price_btc}</Text>
         </View>
       </View>
       <View style={styles.containerPrices}>
         <Text customStyles={styles.text}>$ {currency.price_usd}</Text>
-        <Text customStyles={styles.text}>{currency.price_btc}</Text>
+        <Text customStyles={styles.percentage}>{currency.percent_change_24h}%</Text>
       </View>
     </TouchableOpacity>
   );

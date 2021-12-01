@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import {View} from 'react-native';
 import getSampleCurrencyData from './CurrencyPresenter';
 import {styles} from './styles';
-import CustomStatusBar from '../../components/CustomStatusBar';
+import CustomStatusBar from '../../components/shared/CustomStatusBar';
 import colors from '../../../../themes/colors';
-import Text from '../../components/Text';
+import Text from '../../components/shared/Text';
 import ListCurrency from '../../components/Home/ListCurrency';
 import {ResponseCurrency} from '../../../data/Currency/Currency';
 import SearchBox from '../../components/shared/SearchBox';
@@ -28,7 +28,7 @@ export default function Home(): JSX.Element {
     setCurrencies(currenciesFound);
   }
   useEffect(() => {
-    getSampleCurrencyDataHandler().then();
+    getSampleCurrencyDataHandler().catch();
   }, []);
 
   return (

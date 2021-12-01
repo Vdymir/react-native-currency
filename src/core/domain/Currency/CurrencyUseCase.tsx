@@ -1,5 +1,5 @@
-import {Currency} from '../../data/Currency/Currency';
-import {CurrencyRepository} from './CurrencyRepository';
+import { Currency } from "../../data/Currency/Currency";
+import { CurrencyRepository } from "./CurrencyRepository";
 
 export interface CurrencyService {
   getSampleCurrency(): Promise<Currency>;

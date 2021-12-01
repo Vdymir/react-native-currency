@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
 import {ResponseCurrency} from '../../../../../data/Currency/Currency';
-import Text from '../../../../components/Text';
+import Text from '../../../shared/Text';
 interface ListCurrencyProps {
   currency: ResponseCurrency;
 }

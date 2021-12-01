@@ -8,6 +8,7 @@ import ListCurrency from './components/ListCurrency';
 import SearchBox from './components/SearchBox';
 import useCurrency from './hooks/useCurrency';
 import {useAsync} from '../../../hooks';
+import Wrapper from '../../components/Wrapper';
 
 export default function Home(): JSX.Element {
   const {currencies, query, getCurrencies, handlerSearchCurrency} =
@@ -15,18 +16,12 @@ export default function Home(): JSX.Element {
   useAsync(getCurrencies);
 
   return (
-    <View style={styles.container}>
-      <CustomStatusBar
-        barStyle="light-content"
-        backgroundColor={colors.primary}
-      />
-      <View style={styles.main}>
-        <Text customStyles={styles.text}>Currency Data</Text>
-        <View style={styles.containerSearchBox}>
-          <SearchBox handler={handlerSearchCurrency} value={query} />
-        </View>
-        <ListCurrency currencies={currencies} />
+    <Wrapper>
+      <Text customStyles={styles.text}>Currency Data</Text>
+      <View style={styles.containerSearchBox}>
+        <SearchBox handler={handlerSearchCurrency} value={query} />
       </View>
-    </View>
+      <ListCurrency currencies={currencies} />
+    </Wrapper>
   );
 }

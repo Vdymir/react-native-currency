@@ -7,11 +7,20 @@
  *
  * @format
  */
+import 'react-native-gesture-handler';
 import React from 'react';
 import Home from './src/insfrastructure/ui/containers/Home';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 const App = () => {
-  return <Home />;
+  return (
+    <NavigationContainer>
+      <Home />
+    </NavigationContainer>
+  );
 };
 
 export default App;

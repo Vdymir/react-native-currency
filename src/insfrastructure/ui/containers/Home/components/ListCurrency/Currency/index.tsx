@@ -2,7 +2,6 @@ import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import {styles} from './styles';
 import Text from '../../../../../components/Text';
-import {useNavigation} from '@react-navigation/native';
 import {StackScreenProps} from '@react-navigation/stack';
 import {generateUrlImage} from '../../../../../../helpers';
 

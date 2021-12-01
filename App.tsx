@@ -8,17 +8,29 @@
  * @format
  */
 import 'react-native-gesture-handler';
-import React from 'react';
-import Home from './src/insfrastructure/ui/containers/Home';
+import React, {ComponentType} from 'react';
+import routeStack from './src/insfrastructure/routes/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
+interface Route {
+  route: string;
+  component: ComponentType;
+}
 const App = () => {
   return (
     <NavigationContainer>
-      <Home />
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        {routeStack.map((route: Route) => (
+          <Stack.Screen
+            key={route.route}
+            name={route.route}
+            component={route.component}
+          />
+        ))}
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

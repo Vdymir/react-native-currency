@@ -8,7 +8,7 @@
  * @format
  */
 import React from 'react';
-import BookComponent from './src/core/presentation/containers/Home';
+import BookComponent from './src/core/insfrastructure/ui/containers/Home';
 
 const App = () => {
   return <BookComponent />;

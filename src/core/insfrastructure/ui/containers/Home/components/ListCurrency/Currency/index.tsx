@@ -1,10 +1,9 @@
 import React from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
-import {ResponseCurrency} from '../../../../../data/Currency/Currency';
-import Text from '../../../shared/Text';
+import Text from '../../../../../components/Text';
 interface ListCurrencyProps {
-  currency: ResponseCurrency;
+  currency: any;
 }
 
 export default function Currency({currency}: ListCurrencyProps): JSX.Element {

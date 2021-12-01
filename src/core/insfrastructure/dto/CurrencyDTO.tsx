@@ -1,4 +1,8 @@
-export interface ResponseCurrency {
+export interface Currency {
+  list: Array<any>;
+}
+
+export interface CurrencyDTO {
   csupply: string;
   id: string;
   market_cap_usd: string;
@@ -15,12 +19,4 @@ export interface ResponseCurrency {
   tsupply: string;
   volume24: number;
   volume24a: number;
-}
-
-export class Currency {
-  list: Array<ResponseCurrency>;
-
-  constructor(list: Array<ResponseCurrency>) {
-    this.list = list;
-  }
 }

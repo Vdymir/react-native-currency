@@ -1,11 +1,10 @@
 import React from 'react';
 import {FlatList, View} from 'react-native';
 import {styles} from './styles';
-import {ResponseCurrency} from '../../../../data/Currency/Currency';
 import Currency from './Currency';
 
 interface ListCurrencyProps {
-  currencies: Array<ResponseCurrency>;
+  currencies: Array<any>;
 }
 
 export default function ListCurrency({

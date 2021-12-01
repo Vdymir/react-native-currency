@@ -1,12 +1,9 @@
-import {ICurrencyService} from '../interfaces/currency';
-import {CurrencyRepository} from '../Currency/CurrencyRepository';
-import { Currency } from "../models/currencyModel";
+import {currencyRepository} from '../../insfrastructure/repositories/currencyRepository';
 
-export class CurrencyService implements ICurrencyService {
-  constructor(private readonly currencyRepository: CurrencyRepository) {}
-
-  getCurrencies = async () => {
-    const currency = new Currency();
-    this.currencyRepository.getCurrencies(currency)
-  }
-}
+export const currencyService = {
+  get: async () => {
+    const result = await currencyRepository.get();
+    console.log(result);
+    return result;
+  },
+};

@@ -1,9 +1,12 @@
-import {StyleSheet, TextStyle, ViewStyle} from 'react-native';
+import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 import colors from '../../../../../../themes/colors';
 interface Styles {
   container: ViewStyle;
   text: TextStyle;
   containerPrices: ViewStyle;
+  infoCurrency: ViewStyle;
+  containerNameCurrency: ViewStyle;
+  iconCurrency: ImageStyle;
 }
 export const styles = StyleSheet.create<Styles>({
   container: {
@@ -17,6 +20,17 @@ export const styles = StyleSheet.create<Styles>({
   },
   containerPrices: {
     alignItems: 'flex-end',
+  },
+  iconCurrency: {
+    width: 30,
+    height: 30,
+  },
+  infoCurrency: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  containerNameCurrency: {
+    marginLeft: 12,
   },
   text: {
     color: colors.white,

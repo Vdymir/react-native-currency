@@ -1,7 +1,3 @@
-export interface Currency {
-  list: Array<any>;
-}
-
 export interface CurrencyDTO {
   csupply: string;
   id: string;

@@ -11,17 +11,17 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		151A9F98B4A8474F8A8FB01D /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E996784A30FB4E229BE47C3E /* GTWalsheimPro-Regular.ttf */; };
-		22B157C1C3DB4491BC13B78F /* GTWalsheimPro-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E6427D65DB14D7EB691D24E /* GTWalsheimPro-UltraLight.ttf */; };
-		25AB187BC9BB4BDE832E7986 /* GTWalsheimPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39F47C41885F4AF78E68A679 /* GTWalsheimPro-Black.ttf */; };
-		38EE682363584B5A8BF897CD /* GTWalsheimPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7078E102CF3E44F3AFD4EE70 /* GTWalsheimPro-Light.ttf */; };
-		54D0E05B540640CEA3EC37EB /* GTWalsheimPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B04DD1A36B7A48B485FFCD49 /* GTWalsheimPro-Thin.ttf */; };
 		6172F2D35A4C3AA820D92908 /* libPods-AwesomeTSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-AwesomeTSProject.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-AwesomeTSProject-AwesomeTSProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-AwesomeTSProject-AwesomeTSProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		82339FBB67144CBFA804C42F /* GTWalsheimPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3062598525B44A09AF7016C7 /* GTWalsheimPro-Medium.ttf */; };
-		AD29815FBC4E4921A2381CC3 /* GTWalsheimPro-UltraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76550CAF290147CC89FF51DB /* GTWalsheimPro-UltraBold.ttf */; };
-		B5C8BF718F25496D8819BC91 /* GTWalsheimPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43214BBFADF3413EAF02DD3D /* GTWalsheimPro-Bold.ttf */; };
+		FAC37B3D339F47E496418F16 /* GTWalsheimPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB745F964174D4E838DFECF /* GTWalsheimPro-Black.ttf */; };
+		F79631A3FEBD4D759A52F97B /* GTWalsheimPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA4D2E531DF64E40A75134E0 /* GTWalsheimPro-Bold.ttf */; };
+		95F0620D0246412496807DA4 /* GTWalsheimPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38E58C4D7E7242D39162C040 /* GTWalsheimPro-Light.ttf */; };
+		C008BA9A0B5944AA9701D69B /* GTWalsheimPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25610DEA1B644EE292084C11 /* GTWalsheimPro-Medium.ttf */; };
+		053B42DFAFD1427689BD23ED /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54EFB08F153343B2AA939A04 /* GTWalsheimPro-Regular.ttf */; };
+		2378CB338C5C4BCB9D027F7E /* GTWalsheimPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95B650D7CCB24DAA934A971D /* GTWalsheimPro-Thin.ttf */; };
+		03AE183D2B3B43F99C2944F0 /* GTWalsheimPro-UltraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E66C6F4D5B444C378FF66311 /* GTWalsheimPro-UltraBold.ttf */; };
+		D7704A1505594D528281C7C5 /* GTWalsheimPro-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD50776B6DA48178BB0E651 /* GTWalsheimPro-UltraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,35 +47,35 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AwesomeTSProject/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-AwesomeTSProject-AwesomeTSProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeTSProject-AwesomeTSProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeTSProject-AwesomeTSProjectTests/Pods-AwesomeTSProject-AwesomeTSProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A1ABCC2C0B3421A93781A75 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		3062598525B44A09AF7016C7 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Medium.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; };
 		32CFC57F2F564115AD0E3442 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		39F47C41885F4AF78E68A679 /* GTWalsheimPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Black.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Black.ttf"; sourceTree = "<group>"; };
 		41A4A99032C34B5BA5B57DAF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		43214BBFADF3413EAF02DD3D /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Bold.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; };
 		47337880CA814233A917C026 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		5EB4C641E682478A9DEC5451 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-AwesomeTSProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeTSProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-AwesomeTSProject-AwesomeTSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeTSProject-AwesomeTSProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeTSProject-AwesomeTSProjectTests/Pods-AwesomeTSProject-AwesomeTSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7078E102CF3E44F3AFD4EE70 /* GTWalsheimPro-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Light.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Light.ttf"; sourceTree = "<group>"; };
 		753B9490F15D4F28BFC8BE59 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		755ECA28EEB3464AB98AE830 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		76550CAF290147CC89FF51DB /* GTWalsheimPro-UltraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-UltraBold.ttf"; path = "../src/assets/fonts/GTWalsheimPro-UltraBold.ttf"; sourceTree = "<group>"; };
 		76B1139A3D3540288C170634 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		7EC3C909A15243E9AFCAF935 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeTSProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD6E069F99749D0A2831A08 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		8E6427D65DB14D7EB691D24E /* GTWalsheimPro-UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-UltraLight.ttf"; path = "../src/assets/fonts/GTWalsheimPro-UltraLight.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-AwesomeTSProject-AwesomeTSProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeTSProject-AwesomeTSProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B04DD1A36B7A48B485FFCD49 /* GTWalsheimPro-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Thin.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Thin.ttf"; sourceTree = "<group>"; };
 		BD3CD09BF55F4E538A764F12 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-AwesomeTSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeTSProject.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeTSProject/Pods-AwesomeTSProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CD9C6735A59249E1821E1702 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-AwesomeTSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeTSProject.release.xcconfig"; path = "Target Support Files/Pods-AwesomeTSProject/Pods-AwesomeTSProject.release.xcconfig"; sourceTree = "<group>"; };
 		D9DCDFF1A8D54226B70BB9F6 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		E996784A30FB4E229BE47C3E /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GTWalsheimPro-Regular.ttf"; path = "../src/assets/fonts/GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F825632614DD4254A231E9A2 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		FA52C8B948D549F9BBD90C8A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		7AB745F964174D4E838DFECF /* GTWalsheimPro-Black.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Black.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA4D2E531DF64E40A75134E0 /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Bold.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		38E58C4D7E7242D39162C040 /* GTWalsheimPro-Light.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Light.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		25610DEA1B644EE292084C11 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Medium.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		54EFB08F153343B2AA939A04 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Regular.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95B650D7CCB24DAA934A971D /* GTWalsheimPro-Thin.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-Thin.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E66C6F4D5B444C378FF66311 /* GTWalsheimPro-UltraBold.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-UltraBold.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-UltraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FD50776B6DA48178BB0E651 /* GTWalsheimPro-UltraLight.ttf */ = {isa = PBXFileReference; name = "GTWalsheimPro-UltraLight.ttf"; path = "../src/insfrastructure/assets/fonts/GTWalsheimPro-UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,14 +173,6 @@
 		83F20C28DD624675B138A994 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				39F47C41885F4AF78E68A679 /* GTWalsheimPro-Black.ttf */,
-				43214BBFADF3413EAF02DD3D /* GTWalsheimPro-Bold.ttf */,
-				7078E102CF3E44F3AFD4EE70 /* GTWalsheimPro-Light.ttf */,
-				3062598525B44A09AF7016C7 /* GTWalsheimPro-Medium.ttf */,
-				E996784A30FB4E229BE47C3E /* GTWalsheimPro-Regular.ttf */,
-				B04DD1A36B7A48B485FFCD49 /* GTWalsheimPro-Thin.ttf */,
-				76550CAF290147CC89FF51DB /* GTWalsheimPro-UltraBold.ttf */,
-				8E6427D65DB14D7EB691D24E /* GTWalsheimPro-UltraLight.ttf */,
 				09A59ADE1B774541ABD05597 /* AntDesign.ttf */,
 				755ECA28EEB3464AB98AE830 /* Entypo.ttf */,
 				2A1ABCC2C0B3421A93781A75 /* EvilIcons.ttf */,
@@ -197,6 +189,14 @@
 				47337880CA814233A917C026 /* Octicons.ttf */,
 				8DD6E069F99749D0A2831A08 /* SimpleLineIcons.ttf */,
 				76B1139A3D3540288C170634 /* Zocial.ttf */,
+				7AB745F964174D4E838DFECF /* GTWalsheimPro-Black.ttf */,
+				EA4D2E531DF64E40A75134E0 /* GTWalsheimPro-Bold.ttf */,
+				38E58C4D7E7242D39162C040 /* GTWalsheimPro-Light.ttf */,
+				25610DEA1B644EE292084C11 /* GTWalsheimPro-Medium.ttf */,
+				54EFB08F153343B2AA939A04 /* GTWalsheimPro-Regular.ttf */,
+				95B650D7CCB24DAA934A971D /* GTWalsheimPro-Thin.ttf */,
+				E66C6F4D5B444C378FF66311 /* GTWalsheimPro-UltraBold.ttf */,
+				3FD50776B6DA48178BB0E651 /* GTWalsheimPro-UltraLight.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -308,14 +308,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				25AB187BC9BB4BDE832E7986 /* GTWalsheimPro-Black.ttf in Resources */,
-				B5C8BF718F25496D8819BC91 /* GTWalsheimPro-Bold.ttf in Resources */,
-				38EE682363584B5A8BF897CD /* GTWalsheimPro-Light.ttf in Resources */,
-				82339FBB67144CBFA804C42F /* GTWalsheimPro-Medium.ttf in Resources */,
-				151A9F98B4A8474F8A8FB01D /* GTWalsheimPro-Regular.ttf in Resources */,
-				54D0E05B540640CEA3EC37EB /* GTWalsheimPro-Thin.ttf in Resources */,
-				AD29815FBC4E4921A2381CC3 /* GTWalsheimPro-UltraBold.ttf in Resources */,
-				22B157C1C3DB4491BC13B78F /* GTWalsheimPro-UltraLight.ttf in Resources */,
+				FAC37B3D339F47E496418F16 /* GTWalsheimPro-Black.ttf in Resources */,
+				F79631A3FEBD4D759A52F97B /* GTWalsheimPro-Bold.ttf in Resources */,
+				95F0620D0246412496807DA4 /* GTWalsheimPro-Light.ttf in Resources */,
+				C008BA9A0B5944AA9701D69B /* GTWalsheimPro-Medium.ttf in Resources */,
+				053B42DFAFD1427689BD23ED /* GTWalsheimPro-Regular.ttf in Resources */,
+				2378CB338C5C4BCB9D027F7E /* GTWalsheimPro-Thin.ttf in Resources */,
+				03AE183D2B3B43F99C2944F0 /* GTWalsheimPro-UltraBold.ttf in Resources */,
+				D7704A1505594D528281C7C5 /* GTWalsheimPro-UltraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

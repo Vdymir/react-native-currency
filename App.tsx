@@ -8,10 +8,10 @@
  * @format
  */
 import React from 'react';
-import BookComponent from './src/core/insfrastructure/ui/containers/Home';
+import Home from './src/insfrastructure/ui/containers/Home';
 
 const App = () => {
-  return <BookComponent />;
+  return <Home />;
 };
 
 export default App;

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
 import CustomStatusBar from '../../components/CustomStatusBar';
-import colors from '../../../../../themes/colors';
+import colors from '../../../themes/colors';
 import Text from '../../components/Text';
 import ListCurrency from './components/ListCurrency';
 import SearchBox from './components/SearchBox';

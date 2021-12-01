@@ -2,7 +2,7 @@ import React from 'react';
 import {View, TextInput} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {styles} from './styles';
-import colors from '../../../../../../../themes/colors';
+import colors from '../../../../../themes/colors';
 
 interface SearchBoxProps {
   handler: (arg0: string) => void;

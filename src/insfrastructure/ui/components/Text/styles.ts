@@ -1,6 +1,6 @@
 import {StyleSheet, TextStyle} from 'react-native';
-import fonts from '../../../../../themes/fonts';
-import colors from '../../../../../themes/colors';
+import fonts from '../../../themes/fonts';
+import colors from '../../../themes/colors';
 interface Styles {
   text: TextStyle;
 }

@@ -1,6 +1,6 @@
 import {Platform, StyleSheet, ViewStyle} from 'react-native';
-import colors from '../../../../../../../themes/colors';
-import fonts from '../../../../../../../themes/fonts';
+import colors from '../../../../../themes/colors';
+import fonts from '../../../../../themes/fonts';
 interface Styles {
   container: ViewStyle;
   input: ViewStyle;

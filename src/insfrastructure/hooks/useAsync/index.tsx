@@ -32,9 +32,9 @@ const useAsync = <T extends any>(asyncFunction: any, immediate = true) => {
 
   useEffect(() => {
     if (immediate) {
-      execute();
+      execute().catch();
     }
-  }, [execute, immediate]);
+  }, [immediate]);
   return {execute, status, value, error};
 };
 

@@ -2,22 +2,25 @@ import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import {_styles} from './styles';
 import Text from '../../../../../components/Text';
-import {StackScreenProps} from '@react-navigation/stack';
-import {generateUrlImage, selectFormatPercent } from "../../../../../../helpers";
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {useNavigation} from '@react-navigation/native';
+import {generateUrlImage, selectFormatPercent} from '../../../../../../helpers';
 
-export type RootStackParamList = {
-  Home: undefined;
-  CurrencyDetail: undefined;
+type RootStackParamList = {
+  currencyDetail: undefined;
 };
+
 interface ListCurrencyProps {
   currency: any;
 }
 
-type navigationProps = StackScreenProps<RootStackParamList, 'Home'>;
-
 export default function Currency({currency}: ListCurrencyProps): JSX.Element {
+  const navigation =
+    useNavigation<
+      NativeStackNavigationProp<RootStackParamList, 'currencyDetail'>
+    >();
   function handlePressCurrency() {
-    //navigation.push('currencyDetail');
+    navigation.push('currencyDetail');
   }
   const styles = _styles(selectFormatPercent(currency.percent_change_24h));
   return (
@@ -35,7 +38,9 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
       </View>
       <View style={styles.containerPrices}>
         <Text customStyles={styles.text}>$ {currency.price_usd}</Text>
-        <Text customStyles={styles.percentage}>{currency.percent_change_24h}%</Text>
+        <Text customStyles={styles.percentage}>
+          {currency.percent_change_24h}%
+        </Text>
       </View>
     </TouchableOpacity>
   );

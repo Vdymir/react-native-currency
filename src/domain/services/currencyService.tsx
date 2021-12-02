@@ -1,9 +1,6 @@
 import {currencyRepository} from '../../insfrastructure/repositories/currencyRepository';
 
 export const currencyService = {
-  get: async () => {
-    const result = await currencyRepository.get();
-    console.log(result);
-    return result;
-  },
+  get: async () => await currencyRepository.get(),
+  getById: async (id: string) => await currencyRepository.getById(id),
 };

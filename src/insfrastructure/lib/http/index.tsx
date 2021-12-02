@@ -1,11 +1,14 @@
+
+interface TResponse<T extends any> {
+  message: string;
+  statusCode: string;
+  data: T;
+}
+
 interface ResponseWS<T extends any> {
   status: number;
   error: boolean;
-  response: {
-    message: string;
-    statusCode: string;
-    data: T;
-  };
+  response: T & TResponse<T>;
 }
 
 interface Options {

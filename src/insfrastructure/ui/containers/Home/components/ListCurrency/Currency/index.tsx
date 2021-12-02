@@ -8,6 +8,7 @@ import {generateUrlImage, selectFormatPercent} from '../../../../../../helpers';
 
 type RootStackParamList = {
   currencyDetail: undefined;
+  currencyDetailComments: {idCurrency: number};
 };
 
 interface ListCurrencyProps {
@@ -20,7 +21,7 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
       NativeStackNavigationProp<RootStackParamList, 'currencyDetail'>
     >();
   function handlePressCurrency() {
-    navigation.push('currencyDetail');
+    navigation.push('currencyDetail', currency.id);
   }
   const styles = _styles(selectFormatPercent(currency.percent_change_24h));
   return (

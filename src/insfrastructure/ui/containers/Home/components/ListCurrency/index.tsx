@@ -5,10 +5,14 @@ import Currency from './Currency';
 
 interface ListCurrencyProps {
   currencies: Array<any>;
+  getCurrencies: () => any;
+  loading: boolean;
 }
 
 export default function ListCurrency({
   currencies,
+  getCurrencies,
+                                       loading
 }: ListCurrencyProps): JSX.Element {
   function renderItem({item}: any): JSX.Element {
     return <Currency currency={item} />;
@@ -20,6 +24,8 @@ export default function ListCurrency({
         data={currencies}
         renderItem={renderItem}
         keyExtractor={item => item.id}
+        refreshing={loading}
+        onRefresh={getCurrencies}
       />
     </View>
   );

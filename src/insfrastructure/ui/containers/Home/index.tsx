@@ -11,7 +11,7 @@ import Wrapper from '../../components/Wrapper';
 export default function Home(): JSX.Element {
   const {currencies, query, getCurrencies, handlerSearchCurrency} =
     useCurrency();
-  useAsync(getCurrencies);
+  const {loading} = useAsync(getCurrencies);
 
   return (
     <Wrapper>
@@ -19,7 +19,11 @@ export default function Home(): JSX.Element {
       <View style={styles.containerSearchBox}>
         <SearchBox handler={handlerSearchCurrency} value={query} />
       </View>
-      <ListCurrency currencies={currencies} />
+      <ListCurrency
+        loading={loading}
+        getCurrencies={getCurrencies}
+        currencies={currencies}
+      />
     </Wrapper>
   );
 }

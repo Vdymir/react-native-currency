@@ -35,3 +35,13 @@ export interface CurrencyDetailDTO {
   volume24: string;
   volume24_native: string;
 }
+export interface CurrencyMarketDTO {
+  name: string;
+  base: string;
+  quote: string;
+  price: number;
+  price_usd: number;
+  volume: number;
+  volume_usd: number;
+  time: number;
+}

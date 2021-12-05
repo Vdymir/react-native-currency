@@ -29,8 +29,8 @@ interface CurrencyDetailProps {
 export default function CurrencyDetail({
   route,
 }: CurrencyDetailProps): JSX.Element {
-  const {currency, getCurrencyDetail} = useCurrencyDetail(route.params);
-  useAsync(getCurrencyDetail);
+  const {currency, fetchAll} = useCurrencyDetail(route.params);
+  useAsync(fetchAll);
   const navigation =
     useNavigation<
       NativeStackNavigationProp<RootStackParamList, 'currencyDetail'>
@@ -61,6 +61,15 @@ export default function CurrencyDetail({
           label="Change 7d"
           percent={currency.percent_change_7d}
         />
+      </View>
+
+      <View style={styles.containerPrices}>
+        <Text customStyles={styles.priceUsd}>${currency.price_usd}</Text>
+        <Text customStyles={styles.priceBtc}>{currency.price_btc}</Text>
+      </View>
+
+      <View style={styles.containerMarkets}>
+        <Text>Markets</Text>
       </View>
     </Wrapper>
   );

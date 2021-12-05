@@ -11,6 +11,7 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import ContainerPercent from './components/ContainerPercent';
 import MarketsList from "./components/MarketsList";
+import { setThousands } from "../../../lib";
 
 type routeType = {
   key: string;
@@ -50,7 +51,9 @@ export default function CurrencyDetail({
       </View>
 
       <View style={styles.containerPrices}>
-        <Text customStyles={styles.priceUsd}>${currency.price_usd}</Text>
+        <Text customStyles={styles.priceUsd}>
+          ${setThousands(currency.price_usd)}
+        </Text>
         <Text customStyles={styles.priceBtc}>{currency.price_btc}</Text>
       </View>
 

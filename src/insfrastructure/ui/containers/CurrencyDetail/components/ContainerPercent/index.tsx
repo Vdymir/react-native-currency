@@ -1,7 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
 import Text from '../../../../components/Text';
-import {styles} from './styles';
+import {_styles} from './styles';
+import {selectFormatPercent} from '../../../../../helpers';
 
 interface ContainerPercentProps {
   label: string;
@@ -12,9 +13,10 @@ export default function ContainerPercent({
   label,
   percent,
 }: ContainerPercentProps): JSX.Element {
+  const styles = _styles(selectFormatPercent(percent));
   return (
     <View style={styles.container}>
-      <Text customStyles={styles.text}>{label}</Text>
+      <Text customStyles={styles.title}>{label}</Text>
       <Text customStyles={styles.text}>{percent}</Text>
     </View>
   );

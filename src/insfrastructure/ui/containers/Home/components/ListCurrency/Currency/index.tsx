@@ -5,6 +5,7 @@ import Text from '../../../../../components/Text';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {useNavigation} from '@react-navigation/native';
 import {generateUrlImage, selectFormatPercent} from '../../../../../../helpers';
+import { setThousands } from "../../../../../../lib";
 
 type RootStackParamList = {
   currencyDetail: undefined;
@@ -38,7 +39,9 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
         </View>
       </View>
       <View style={styles.containerPrices}>
-        <Text customStyles={styles.text}>$ {currency.price_usd}</Text>
+        <Text customStyles={styles.text}>
+          ${setThousands(currency.price_usd)}
+        </Text>
         <Text customStyles={styles.percentage}>
           {currency.percent_change_24h}%
         </Text>

@@ -10,6 +10,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import ContainerPercent from './components/ContainerPercent';
+import MarketsList from "./components/MarketsList";
 
 type routeType = {
   key: string;
@@ -29,7 +30,7 @@ interface CurrencyDetailProps {
 export default function CurrencyDetail({
   route,
 }: CurrencyDetailProps): JSX.Element {
-  const {currency, fetchAll} = useCurrencyDetail(route.params);
+  const {currency, currencyMarkets, fetchAll} = useCurrencyDetail(route.params);
   useAsync(fetchAll);
   const navigation =
     useNavigation<
@@ -48,6 +49,11 @@ export default function CurrencyDetail({
         <Text customStyles={styles.text}>{currency.name} Detail</Text>
       </View>
 
+      <View style={styles.containerPrices}>
+        <Text customStyles={styles.priceUsd}>${currency.price_usd}</Text>
+        <Text customStyles={styles.priceBtc}>{currency.price_btc}</Text>
+      </View>
+
       <View style={styles.percents}>
         <ContainerPercent
           label="Change 1h"
@@ -63,13 +69,9 @@ export default function CurrencyDetail({
         />
       </View>
 
-      <View style={styles.containerPrices}>
-        <Text customStyles={styles.priceUsd}>${currency.price_usd}</Text>
-        <Text customStyles={styles.priceBtc}>{currency.price_btc}</Text>
-      </View>
-
       <View style={styles.containerMarkets}>
-        <Text>Markets</Text>
+        <Text customStyles={styles.markets}>Markets</Text>
+        <MarketsList markets={currencyMarkets} />
       </View>
     </Wrapper>
   );

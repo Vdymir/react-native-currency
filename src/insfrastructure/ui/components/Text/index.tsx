@@ -7,9 +7,15 @@ interface TextProps {
   customStyles?: StyleProp<ViewStyle>;
 }
 
-const Text: React.FC<TextProps> = ({children, customStyles}): JSX.Element => {
+const Text: React.FC<TextProps> = ({
+  children,
+  customStyles,
+  ...props
+}): JSX.Element => {
   return (
-    <Tx style={{...styles.text, ...(customStyles as object)}}>{children}</Tx>
+    <Tx {...props} style={{...styles.text, ...(customStyles as object)}}>
+      {children}
+    </Tx>
   );
 };
 export default Text;

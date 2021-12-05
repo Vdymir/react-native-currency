@@ -5,6 +5,7 @@ interface Styles {
   text: TextStyle;
   priceUsd: TextStyle;
   priceBtc: TextStyle;
+  markets: TextStyle;
   main: ViewStyle;
   header: ViewStyle;
   containerSearchBox: ViewStyle;
@@ -48,7 +49,6 @@ export const styles = StyleSheet.create<Styles>({
   },
   containerPrices: {
     marginTop: 20,
-    backgroundColor: 'red',
     paddingHorizontal: 22,
     paddingVertical: 14,
     justifyContent: 'center',
@@ -56,5 +56,12 @@ export const styles = StyleSheet.create<Styles>({
   },
   containerMarkets: {
     marginTop: 20,
+    flex: 1,
+  },
+  markets: {
+    color: colors.white,
+    fontSize: 24,
+    marginBottom: 20,
+    textAlign: 'center',
   },
 });

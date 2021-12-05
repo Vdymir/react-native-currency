@@ -12,7 +12,7 @@ interface ListCurrencyProps {
 export default function ListCurrency({
   currencies,
   getCurrencies,
-                                       loading
+  loading,
 }: ListCurrencyProps): JSX.Element {
   function renderItem({item}: any): JSX.Element {
     return <Currency currency={item} />;

@@ -6,6 +6,7 @@ interface Styles {
   main: ViewStyle;
   header: ViewStyle;
   containerSearchBox: ViewStyle;
+  percents: ViewStyle;
 }
 export const styles = StyleSheet.create<Styles>({
   container: {
@@ -28,5 +29,10 @@ export const styles = StyleSheet.create<Styles>({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  percents: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 20,
   },
 });

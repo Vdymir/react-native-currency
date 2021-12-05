@@ -9,6 +9,7 @@ import colors from '../../../themes/colors';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import ContainerPercent from './components/ContainerPercent';
 
 type routeType = {
   key: string;
@@ -45,6 +46,21 @@ export default function CurrencyDetail({
           <Icon name="arrowleft" size={25} color={colors.white} />
         </TouchableOpacity>
         <Text customStyles={styles.text}>{currency.name} Detail</Text>
+      </View>
+
+      <View style={styles.percents}>
+        <ContainerPercent
+          label="Change 1h"
+          percent={currency.percent_change_1h}
+        />
+        <ContainerPercent
+          label="Change 24h"
+          percent={currency.percent_change_24h}
+        />
+        <ContainerPercent
+          label="Change 7d"
+          percent={currency.percent_change_7d}
+        />
       </View>
     </Wrapper>
   );

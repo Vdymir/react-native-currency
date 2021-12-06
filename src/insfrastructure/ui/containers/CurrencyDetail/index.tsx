@@ -7,11 +7,10 @@ import useCurrencyDetail from './hooks/useCurrencyDetail';
 import {useAsync} from '../../../hooks';
 import colors from '../../../themes/colors';
 import Icon from 'react-native-vector-icons/AntDesign';
-import {useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import ContainerPercent from './components/ContainerPercent';
-import MarketsList from "./components/MarketsList";
-import { setThousands } from "../../../lib";
+import MarketsList from './components/MarketsList';
+import {setThousands} from '../../../lib';
+import withNavigator from '../../../hooks/withNavigator';
 
 type routeType = {
   key: string;
@@ -19,32 +18,18 @@ type routeType = {
   params: string;
 };
 
-type RootStackParamList = {
-  currencyDetail: undefined;
-  currencyDetailComments: {idCurrency: number};
-};
-
 interface CurrencyDetailProps {
   route: routeType;
+  goBack: () => void;
 }
 
-export default function CurrencyDetail({
-  route,
-}: CurrencyDetailProps): JSX.Element {
+const CurrencyDetail = ({route, goBack}: CurrencyDetailProps): JSX.Element => {
   const {currency, currencyMarkets, fetchAll} = useCurrencyDetail(route.params);
   useAsync(fetchAll);
-  const navigation =
-    useNavigation<
-      NativeStackNavigationProp<RootStackParamList, 'currencyDetail'>
-    >();
-  function handlerBack() {
-    navigation.goBack();
-  }
-  console.log('currency', currency);
   return (
     <Wrapper>
       <View style={styles.header}>
-        <TouchableOpacity onPress={handlerBack}>
+        <TouchableOpacity onPress={goBack}>
           <Icon name="arrowleft" size={25} color={colors.white} />
         </TouchableOpacity>
         <Text customStyles={styles.text}>{currency.name} Detail</Text>
@@ -78,4 +63,5 @@ export default function CurrencyDetail({
       </View>
     </Wrapper>
   );
-}
+};
+export default withNavigator(CurrencyDetail);

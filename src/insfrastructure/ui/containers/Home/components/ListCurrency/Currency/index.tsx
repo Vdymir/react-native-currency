@@ -2,27 +2,18 @@ import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import {_styles} from './styles';
 import Text from '../../../../../components/Text';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {useNavigation} from '@react-navigation/native';
 import {generateUrlImage, selectFormatPercent} from '../../../../../../helpers';
-import { setThousands } from "../../../../../../lib";
-
-type RootStackParamList = {
-  currencyDetail: undefined;
-  currencyDetailComments: {idCurrency: number};
-};
+import {setThousands} from '../../../../../../lib';
+import withNavigator from '../../../../../../hooks/withNavigator';
 
 interface ListCurrencyProps {
   currency: any;
+  goTo: (route: string, params?: any) => void;
 }
 
-export default function Currency({currency}: ListCurrencyProps): JSX.Element {
-  const navigation =
-    useNavigation<
-      NativeStackNavigationProp<RootStackParamList, 'currencyDetail'>
-    >();
+function Currency({currency, goTo}: ListCurrencyProps): JSX.Element {
   function handlePressCurrency() {
-    navigation.push('currencyDetail', currency.id);
+    goTo('currencyDetail', currency.id);
   }
   const styles = _styles(selectFormatPercent(currency.percent_change_24h));
   return (
@@ -49,3 +40,4 @@ export default function Currency({currency}: ListCurrencyProps): JSX.Element {
     </TouchableOpacity>
   );
 }
+export default withNavigator(Currency);

@@ -7,18 +7,20 @@ import SearchBox from './components/SearchBox';
 import useCurrency from './hooks/useCurrency';
 import {useAsync} from '../../../hooks';
 import Wrapper from '../../components/Wrapper';
+import Loader from '../../components/Loader';
 
 export default function Home(): JSX.Element {
   const {currencies, query, getCurrencies, handlerSearchCurrency} =
     useCurrency();
-  const {loading} = useAsync(getCurrencies);
-
+  const {loading, error} = useAsync(getCurrencies);
+  console.log('error', error);
   return (
     <Wrapper>
       <Text customStyles={styles.text}>Currency Data</Text>
       <View style={styles.containerSearchBox}>
         <SearchBox handler={handlerSearchCurrency} value={query} />
       </View>
+      <Loader isloading={loading} />
       <ListCurrency
         loading={loading}
         getCurrencies={getCurrencies}

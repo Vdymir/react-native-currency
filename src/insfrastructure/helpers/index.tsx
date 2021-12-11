@@ -11,6 +11,8 @@ export const selectFormatPercent = (percent: string) =>
 export const ShowToast = (title: string, message: string, duration: number) => {
   if (Platform.OS === 'ios') {
     Toast.ShowMessage(title, message, duration);
-    return;
+  } else {
+    console.log('Toas', Toast)
+    Toast.showToast(message, Toast.LONG);
   }
 };

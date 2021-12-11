@@ -8,13 +8,12 @@ import useCurrency from './hooks/useCurrency';
 import {useAsync} from '../../../hooks';
 import Wrapper from '../../components/Wrapper';
 import Loader from '../../components/Loader';
-import Error from "../../components/Error";
+import Error from '../../components/Error';
 
 export default function Home(): JSX.Element {
   const {currencies, query, getCurrencies, handlerSearchCurrency} =
     useCurrency();
   const {loading, error} = useAsync(getCurrencies);
-  console.log('error', error);
   return (
     <Wrapper>
       <Text customStyles={styles.text}>Currency Data</Text>
@@ -23,11 +22,13 @@ export default function Home(): JSX.Element {
       </View>
       <Loader isloading={loading} />
       <Error show={error} />
-      <ListCurrency
-        loading={loading}
-        getCurrencies={getCurrencies}
-        currencies={currencies}
-      />
+      {!loading && (
+        <ListCurrency
+          loading={loading}
+          getCurrencies={getCurrencies}
+          currencies={currencies}
+        />
+      )}
     </Wrapper>
   );
 }

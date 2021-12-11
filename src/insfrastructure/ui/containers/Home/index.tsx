@@ -8,6 +8,7 @@ import useCurrency from './hooks/useCurrency';
 import {useAsync} from '../../../hooks';
 import Wrapper from '../../components/Wrapper';
 import Loader from '../../components/Loader';
+import Error from "../../components/Error";
 
 export default function Home(): JSX.Element {
   const {currencies, query, getCurrencies, handlerSearchCurrency} =
@@ -21,6 +22,7 @@ export default function Home(): JSX.Element {
         <SearchBox handler={handlerSearchCurrency} value={query} />
       </View>
       <Loader isloading={loading} />
+      <Error show={error} />
       <ListCurrency
         loading={loading}
         getCurrencies={getCurrencies}

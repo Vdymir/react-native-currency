@@ -1,3 +1,5 @@
+import {NativeModules, Platform} from 'react-native';
+const {Toast} = NativeModules;
 import {mediaUrl} from '../config';
 
 export const generateUrlImage = (currency: string) =>
@@ -5,3 +7,10 @@ export const generateUrlImage = (currency: string) =>
 
 export const selectFormatPercent = (percent: string) =>
   Math.sign(Number(percent)) === -1;
+
+export const ShowToast = (title: string, message: string, duration: number) => {
+  if (Platform.OS === 'ios') {
+    Toast.ShowMessage(title, message, duration);
+    return;
+  }
+};

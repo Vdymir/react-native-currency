@@ -30,7 +30,6 @@ const useCurrencyDetail = (idCurrency: string) => {
     if (error) {
       return alert('Could not get that currencies', 'error');
     }
-    console.log('Holaa', response);
     setCurrencyMarkets(response);
   };
 

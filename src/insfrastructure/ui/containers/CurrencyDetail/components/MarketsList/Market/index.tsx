@@ -10,7 +10,6 @@ interface MarketProps {
 }
 
 export default function Market({market}: MarketProps): JSX.Element {
-  console.log(market);
   return (
     <View style={styles.container}>
       <Text customStyles={styles.column}>{market.name}</Text>

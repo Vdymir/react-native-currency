@@ -1,4 +1,5 @@
 import {useCallback, useEffect, useState} from 'react';
+import { ShowToast } from "../../helpers";
 
 export enum STATUS {
   IDLE = 'idle',
@@ -25,6 +26,7 @@ const useAsync = <T extends any>(asyncFunction: any, immediate = true) => {
         setStatus(STATUS.SUCCESS);
       })
       .catch((err: Error) => {
+        ShowToast('Ha ocurrido un error', err.message, 4);
         setLoading(false);
         setError(err);
         setStatus(STATUS.ERROR);

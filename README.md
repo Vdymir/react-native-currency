@@ -23,7 +23,7 @@ But what if it grows? It's better by modules.
 
 And so I could continue with many more options, once again, I have done what I think is convenient.
 
-Translated with www.DeepL.com/Translator (free version)
+Finally, I want to say that I have done integration with java and swift to create native modules 😉.
 
 
 ### Pre-Requirements
